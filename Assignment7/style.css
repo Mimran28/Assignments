@@ -1,13 +1,21 @@
 body{
     margin:0;
     padding:0;
+
     background-color: black;
 }
+
+
 .header{
+    margin-left:auto;
+    margin-right:auto;    
+  
     height: 93px;
     display:flex;
     align-items: center;
 }
+
+
 .logo{
     margin-left:60px;
 }
@@ -15,10 +23,11 @@ body{
     width: 165px;
     height: 80px;
 }
-.nav{
+.nav{ 
+    
     width: 100%;
    height:58px;
-    padding-left: 200px;
+    padding-left: 50px;
     display: flex;
 }
 .nav>ul{
@@ -49,7 +58,6 @@ body{
 .btn>button{
     background-color: transparent;
     color:white;
-    
     margin-left: 20px;
     border-radius:38px;
     height:59px;
@@ -78,3 +86,226 @@ body{
     height: 513px;
     width: 100%;
 }
+.mainheading{
+    width:100%;
+    text-align: center;
+    color:white;
+  
+    margin-top:90px;
+    
+}
+.mainheading>h1{
+    font-family: 'Open Sans', sans-ser;
+    font-size: 40px;
+}
+.mainheading>p{
+    font-size: 18px;
+    color:rgb(195, 193, 193);
+    word-spacing:3px;
+}
+.spantag{
+    font-family: 'Shrikhand', cursive;
+}
+.others{
+    margin-top:50px;
+}
+.others>ul{
+  list-style-type: none;
+  display: flex;
+justify-content: center;
+}
+
+.othersimg1,.othersimg2,.othersimg3{
+    background-color: white;
+    padding: 20px 0;
+    margin-right: 20px;
+    border-radius: 4px;
+    
+}
+.btn1,.btn2,.btn3{
+  margin:20px auto;
+  display: block;
+  color:white;
+  background-color: transparent;
+  padding:15px;
+  border-radius: 25px;
+  border:1px solid white
+}
+.heading{
+    width: 100%;
+    color:white;
+    text-align: center;
+    line-height: 30px;
+    margin-top:200px;
+    padding:5px;
+}
+.heading>h1{
+    margin:0px;
+   font-size: 40px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+
+   
+}
+.heading>h2{
+    margin: 0px;
+    margin-top:28px;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-ser;
+}
+.heading>p{
+    margin-top:25px;
+    font-family: 'open-sans';
+    font-size:20px;
+    color:rgb(196, 194, 194);
+    word-spacing: 4px;
+
+}
+.address{
+    width: 100%;   
+    display:flex;
+    justify-content: space-around;
+    margin-top:70px;
+}
+.addresstext{
+    margin-left:50px;
+    color:white;
+    font-size: 19px;
+}
+.addresstext>p{
+    color:red;
+    letter-spacing: 10px;
+}
+.addresstext>h1{
+    margin:5px;
+}
+.rest{
+    font-family:'Open Sans', sans-ser;
+}
+.salt{
+    font-family: 'Shrikhand', cursive;
+}
+.addresstext1{
+    display:flex; 
+    align-items: center; 
+    color:rgb(208, 202, 202);
+    line-height: 6px;
+}
+
+.button1{
+    position:relative;
+    border: 1px solid white;
+    height:30px;
+    width:122px;
+    color:white;
+    border-radius:30px;
+    padding:10px;
+    display: flex;
+   align-items: center;
+   margin-top:40px;
+   margin-left: 10px;
+ font-size:15px;
+}
+.button1>.icon{
+    top:11px;
+}
+.heading2{
+    text-align: center;
+    color:white;
+    margin-top:100px;
+    padding:70px 0px;
+}
+.heading2>h1{
+    margin:0px;
+    font-family: 'Shrikhand', cursive;
+     font-size: 50px;
+}
+.heading2>h2{
+    margin:0px;
+
+    font-family:'Open Sans', sans-ser;
+    font-size: 52px;
+}
+.expressfrenchises{
+    display:flex;
+   justify-content: center;
+
+}
+.expressfrenchise1{
+    width:350px;
+  padding:0px 15px;
+}
+#rotate{
+    transform: rotate(-45deg);
+}
+#btn2{
+    padding-left:20px;
+    padding-right:20px;
+}
+.openingsoon{
+    display: flex;
+    justify-content: center;
+}
+.opening{
+    margin-left:10px;
+    background-color: white;
+    text-align: center;
+    height: 260px;
+    width: 300px;
+}
+@media screen and (max-width:576px){
+  
+    .nav>ul{
+        display: none;
+    }
+    .logo>img{
+        margin-left:15px;
+       }
+    .nav>button{
+        display: none;
+    }
+    .btn>button{
+        margin-left:40px
+    }
+    .slider>img{
+        height: 300px;
+    }
+    .mainheading>h1{
+        font-size:26px;
+    }
+    .mainheading>p{
+        font-size:14px;
+        padding:5px;
+        word-spacing:0px;
+    }
+    .othersimg1,.othersimg3,.btn1,.btn3{
+        display:none
+    }
+    .heading>h2{
+        font-size: 26px;
+        margin-top:10px;
+    }
+    .heading>p{
+        font-size:16px;
+        word-spacing: 0px;
+        line-height: 17px;
+    }
+
+   
+ }
+ @media screen and (max-width:768px){
+    .nav>ul{
+        display: none;
+    }
+ }
+ @media screen and (max-width:992px){
+   .nav{
+    padding-left:0px;
+   }
+   .nav>ul>li{
+    margin-left:10px;
+   }
+   .logo{
+    margin-left: 5px;
+   }
+ }
