@@ -1,0 +1,134 @@
+.button{
+    height: 30px;
+    width:180px;
+    border:2px solid white;
+    color:white;
+    font-weight: bold;
+    padding:0px 9px;
+    font-family: Sofia Pro;
+    border-radius:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .button:hover{
+   background-color: white;
+   color:#0065c3;
+  }
+  .button:hover .c1{
+      animation:animate;
+      animation-duration: 0.2s;
+      animation-timing-function: cubic-bezier(1,1,1,1);
+  }
+  .button:hover .c2{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+       animation-delay: 0.04s;
+  }
+  .button:hover .c3{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.06s;
+   }
+   .button:hover .c4{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.12s;
+   }
+   .button:hover .c5{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.14s;
+   }
+   .button:hover .c6{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.16s;
+   }
+   .button:hover .c7{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.18s;
+   }
+   .button:hover .c8{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.2s;
+   }
+   .button:hover .c9{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.22s;
+   }
+  
+   .button:hover .c10{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.24s;
+   }
+  
+   .button:hover .c11{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.26s;
+   }
+  
+   .button:hover .c12{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.28s;
+   }
+  
+   .button:hover .c13{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.3s;
+   }
+  
+   .button:hover .c14{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.32s;
+   }
+   .button:hover .c15{
+      animation:animate;
+      animation-duration: 0.2s;
+       animation-timing-function: cubic-bezier(1,1,1,1);
+      animation-delay: 0.34s;
+   }
+   .imglogo:hover{
+      animation: animate2 ;
+      animation-duration:0.2s;
+   }
+  @keyframes animate {
+      0%{
+          margin-top:0px;
+      
+      }
+      100%{
+          margin-top:-100px;
+          
+      }
+  }
+  @keyframes animate2{
+   0%{
+      transform:rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+  }
