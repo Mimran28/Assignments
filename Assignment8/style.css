@@ -10,10 +10,14 @@ body{
 }
 .header{
     height: 90px;
+    width: 100%;
+    max-width: 1500px;
     background-color: #0065c3;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+   z-index: 1;
 }
 .navbar>ul{
     display: flex;
@@ -82,26 +86,35 @@ height: 55vw;
 .section2{
     background-color: black;
     display: flex;
+    height: 600px;
+  
+ 
+}
+.black-pepsi-image{
+   height: 100%;
+   width: 46em;
+    background-image: url("https://www.pepsi.com/en-us/uploads/images/pzs-new-taste/pzs-can-nobug-desktop.png");
+    background-size: auto 115%;
+    background-position: right -76px bottom;
+    position: relative;
+    background-repeat: no-repeat;
 }
 
-.blackpepsi{
-    position: relative;
-}
 .blackpepsiimg{
-    height: 100%;
-    width: 60vw;
+    height: 43em;
+    width: 52em;
 }
 .postabs{
     position: absolute;
-    right: 190px;
-    top: 105px;
+    right: 120px;
+    top: 12px;
 }
 .section2text{
     display: flex;
     flex-direction: column;
     align-items: center;
-   margin-left: -100px;
-    margin-top: 135px;
+
+    margin-top: 50px;
 
 }
 .promotioncontain{
@@ -141,4 +154,39 @@ top:30px;
     color: white;
     font-family:Sofia Pro;
     font-size: 12px;
+}
+.pepsinitrosec{
+    height:600px;
+    background-image: url("https://www.pepsi.com/en-us/uploads/images/nitro/Desktop_Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pepsinitroimg>img{
+   
+    height: 32em;
+    width: 25em;
+
+}
+.pepsinitrotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.pepsi-nitro-img>img{
+    height: 16em;
+
+}
+.pepsinitrotext>h2{
+    margin: 0;
+    padding-top: 0;
+    color:white;
+    font-family: Sofia Pro;
+    font-weight: bold;
 }
