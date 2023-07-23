@@ -17,7 +17,7 @@ body{
     align-items: center;
     justify-content: space-between;
     position: fixed;
-   z-index: 1;
+   z-index: 10;
 }
 .navbar>ul{
     display: flex;
@@ -34,6 +34,11 @@ body{
 @font-face {
     font-family: Sofia Pro;
     src: url("fonts/SofiaProBold.ttf");
+    font-weight: 800;
+}
+@font-face {
+    font-family: Cervo neue;
+    src: url("fonts/Demo_Fonts/Fontspring-DEMO-cervoneue-extraboldneue.otf");
     font-weight: 800;
 }
 .section{
@@ -189,4 +194,156 @@ top:30px;
     color:white;
     font-family: Sofia Pro;
     font-weight: bold;
+}
+.better-with-container{
+    display: flex ;
+    height: 600px;
+    background-color: #265cc5;
+}
+.better-right{
+    background-image:Url("https://www.pepsi.com/en-us/uploads/images/better-with-pepsi/PEP_BWP_D.jpg");
+    height: 600px;
+    flex:2;
+    background-position:33% 0 ;
+    background-position: 58% 0;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.better-right>img{
+    position:absolute;
+    bottom: 5px;
+    right: 0;
+    height: 140px;
+    width: 480px;
+}
+.better-left{
+
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ribs-img>img{
+    width: 380px;
+    height: 200px;
+
+}
+.ribs-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ margin-top:20px;
+    background-color: #1437bf;
+    color: white;
+    font-family: Sofia Pro;
+    
+
+}
+.ribs-img>p{
+    margin:0;
+    padding:8px 0px;
+}
+.pepsi-mango{
+    background-image: Url("https://www.pepsi.com/en-us/uploads/images/pepsi-mango/mango-bg.jpg");
+   height: 700px;
+   background-size: cover;
+   position: relative;
+}
+.bottom-img{
+    position: absolute;
+    z-index: 1;
+    height: 580px;
+    width: 100%;
+    bottom:0
+}
+.text-img{
+    position: absolute;
+    z-index: 2;
+    height: 290px;
+    width: 370px;
+    left: 45px;
+    top: 76px;
+}
+.bottom-text{
+    height: 30px;
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    z-index: 3;
+}
+.right-img{
+    width: 880px;
+    height: 700px;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index:4;
+}
+.videocontainer{
+    height: 500px;
+    width: 100%;
+    background-color: #0065c3;
+}
+.bluepepsi{
+    display: flex;
+    background-color:#0254ae ;
+    align-items: center;
+    justify-content: center;
+}
+.bluepepsiimg{
+    margin-top:50px ;
+    width: 650px;
+    height: 600px;
+
+}
+.bluepepsitext{
+    width: 450px;
+    height: 310px;
+}
+.color-pepsi{
+    height: 500px;
+    width: 100%;
+    background-color: #0065c3;
+    display: flex;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+}
+.color-pepsi-left{
+    width: 31%;
+    margin-left: 140px;
+}
+.color-pepsi-left>span{
+    font-size: 60px;
+    font-family: Cervo neue;
+    line-height: 65px;
+}
+.color-pepsi-left>p{
+    font-family: Sofia Pro;
+}
+.color-pepsi-right{
+    width: 50%;
+    margin-left: 90px;
+}
+.color-pepsi-right>img{
+    width: 480px;
+    height: 240px;
+}
+.pepsi-hover-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pepsi-hover-img>p{
+    font-size: 60px;
+    font-family: Cervo neue;
+    margin:0;
+    padding:0;
+     color:#0065c3;
+
+}
+.pepsi-img-container>img{
+    height: 230px;
+    width: 230px;
 }
