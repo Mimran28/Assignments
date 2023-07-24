@@ -1,0 +1,150 @@
+body{
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: "Fidel-Black";
+   
+    src: url("https://db.onlinewebfonts.com/t/7d89fd5a3b1077fea23b1658f1f8d320.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7d89fd5a3b1077fea23b1658f1f8d320.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7d89fd5a3b1077fea23b1658f1f8d320.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7d89fd5a3b1077fea23b1658f1f8d320.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7d89fd5a3b1077fea23b1658f1f8d320.svg#Fidel-Black")format("svg");
+}
+.container{
+    max-width: 1500px;
+   
+}
+.header-sec{
+ background-image: url("https://www.grumpybeartown.com/images/bg1-min.png"); 
+
+height: 900px;
+}
+.header{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Trebuchet MS';
+  padding:30px 0;
+  color:white;
+  margin:0 20px;
+
+}
+.header>ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:0 20px;
+
+}
+.header>ul>li{
+    font-size: 18px;
+   font-family: Helvetica Neue WGL;
+}
+.header>ul>li:hover{
+    color:#72b0f1;
+    cursor: pointer;
+}
+.header-icons{
+    width:180px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 21px;
+}
+.header-icons>i:hover{
+    color:#72b0f1;
+    cursor: pointer;
+}
+.header-button{
+    width: 217px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d53434 ;
+    border-radius:30px;
+    font-family: "Fidel-Black";
+    font-size: 27px;
+}
+.header-button:hover{
+    background-color:rgba(213,52,52,0.9) ;
+    cursor: pointer;
+}
+.section{
+    display: flex;
+ width: 100%;
+ justify-content: center;
+ 
+}
+.white-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width:280px;
+    padding:0 20px;
+    height: 58px;
+    border-radius: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top:30px
+}
+.sec-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.credit-button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    height: 50px;
+    border-radius: 10px;
+     margin-top: 5px;
+     margin-left: 15px;
+}
+.credit-button>img{
+    height: 21px;
+    width: 21px;
+    padding:0 10px;
+}
+.buttons{
+    display: flex;
+    margin-top:30px
+}
+.section-story{
+    background-image: url("https://www.grumpybeartown.com/images/bg2-min.png");
+    color:white;
+}
+.section-story>h1{
+    font-family: "Fidel-Black";
+    font-size: 83px;
+    text-align: center;
+    margin:0;
+    padding:60px 0;
+}
+.sec-story-d{
+   
+    display: flex;
+justify-content: center;
+padding-bottom: 50px;
+}
+.sec-story-d>p{
+ width: 47%;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    margin: 0;
+}
+.sec-story-d>img{
+   padding:0 90px;
+    height: 400px;
+    width: 350px;
+    
+}
