@@ -148,3 +148,39 @@ padding-bottom: 50px;
     width: 350px;
     
 }
+.rarity{
+    font-family: "Fidel-Black";
+    background-color: #2f559d;
+    color:white;
+    padding-bottom:40px;
+}
+.rarity>h1{
+    font-size: 83px;
+    text-align: center;
+    margin:0;
+    padding:90px 0;
+}
+.rarity-lr{
+   
+    display: flex;
+    justify-content: space-between;
+    font-size:36px;
+    padding:0 30px;
+}
+.rarity-left{
+    width:50%;
+    line-height: 16px;
+}
+.rarity-right{
+    
+    width:36%;
+    line-height: 18px;
+}
+.rarity-right>p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.color-bl{
+    color:#7bd1ff;
+}
