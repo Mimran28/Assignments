@@ -184,3 +184,48 @@ padding-bottom: 50px;
 .color-bl{
     color:#7bd1ff;
 }
+
+.roadmapcontainer{
+    background-image: url(https://www.grumpybeartown.com/images/bg3-min.png);
+    padding:90px;
+}
+.roadmap-heading{
+    font-family: "Fidel-Black";
+    font-size: 83px;
+    color:#fce956;
+ }
+.roadmap{
+    background-color: #6cb1ed;
+    padding:20px 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .roadmap p{
+    font-family: 'Roboto', sans-serif;
+    font-size:22px;
+ }
+
+ .notice{
+    display: flex;
+    background-color: #fce956;
+    padding:10px 17px;
+    align-items: center;
+}
+ .notice-text{
+    padding-left:10px;
+ }
+ .percent-roadmap{
+    display: flex;
+    width: 100%;
+    align-items: center;
+ }
+ .percent{
+    border:3px solid black;
+    padding:22px 40px;
+ }
+ .percent-roadmap>p{
+    font-family: 'Roboto', sans-serif;
+    font-size:28px;
+    padding-left:25px;
+ }
