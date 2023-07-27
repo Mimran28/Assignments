@@ -74,7 +74,7 @@ height: 900px;
 .section{
     display: flex;
  width: 100%;
- justify-content: center;
+ justify-content: space-around;
  
 }
 .white-button{
@@ -94,6 +94,7 @@ height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 .credit-button{
@@ -139,13 +140,13 @@ padding-bottom: 50px;
 .sec-story-d>p{
  width: 47%;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 26px;
+    font-size: 29px;
     margin: 0;
 }
 .sec-story-d>img{
    padding:0 90px;
-    height: 400px;
-    width: 350px;
+   height: 426px;
+   width: 377px;
     
 }
 .rarity{
@@ -165,7 +166,7 @@ padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     font-size:36px;
-    padding:0 30px;
+    padding: 0px 56px;
 }
 .rarity-left{
     width:50%;
@@ -187,12 +188,13 @@ padding-bottom: 50px;
 
 .roadmapcontainer{
     background-image: url(https://www.grumpybeartown.com/images/bg3-min.png);
-    padding:90px;
+    padding:85px 60px;
 }
 .roadmap-heading{
     font-family: "Fidel-Black";
     font-size: 83px;
     color:#fce956;
+    margin:0;
  }
 .roadmap{
     background-color: #6cb1ed;
@@ -200,6 +202,8 @@ padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 1300px;
  }
  .roadmap p{
     font-family: 'Roboto', sans-serif;
@@ -224,8 +228,45 @@ padding-bottom: 50px;
     border:3px solid black;
     padding:22px 40px;
  }
+
  .percent-roadmap>p{
     font-family: 'Roboto', sans-serif;
     font-size:28px;
     padding-left:25px;
+ }
+ .team-sec{
+    background-image: url(https://www.grumpybeartown.com/images/bg4-min.png);
+    height: 712px;
+ }
+ .faq-sec{
+    background-color: #5496e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1780px;
+ }
+ .faq-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+ }
+ .card{
+    background-color: white;
+    color:black;
+    border-radius: 12px;
+    width: 85%;
+    margin:0 auto;
+    padding:10px 40px 2px 40px;
+ }
+ .faq-ans{
+    font-family: 'Roboto';
+    font-size:19px;
+    font-weight: 300;
+
+ }
+ .faq-ques{
+    font-family: 'Roboto', sans-serif;
+    font-size:26px
  }
