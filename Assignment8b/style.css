@@ -13,8 +13,9 @@ body{
 }
 .container{
     max-width: 1500px;
-   
+   position: relative;
 }
+
 .header-sec{
  background-image: url("https://www.grumpybeartown.com/images/bg1-min.png"); 
 
@@ -134,7 +135,7 @@ height: 900px;
 .sec-story-d{
    
     display: flex;
-justify-content: center;
+justify-content: space-around;
 padding-bottom: 50px;
 }
 .sec-story-d>p{
@@ -144,7 +145,7 @@ padding-bottom: 50px;
     margin: 0;
 }
 .sec-story-d>img{
-   padding:0 90px;
+
    height: 426px;
    width: 377px;
     
@@ -243,7 +244,7 @@ padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1780px;
+
  }
  .faq-card{
     width: 100%;
@@ -257,7 +258,7 @@ padding-bottom: 50px;
     color:black;
     border-radius: 12px;
     width: 85%;
-    margin:0 auto;
+    margin:10px auto;
     padding:10px 40px 2px 40px;
  }
  .faq-ans{
@@ -269,4 +270,28 @@ padding-bottom: 50px;
  .faq-ques{
     font-family: 'Roboto', sans-serif;
     font-size:26px
+ }
+ .faq-footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+ }
+ .footer{
+    background-color: #003063;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    padding:70px 0;
+ }
+ .hover-effect{
+    height: 53px;
+    width: 73px; 
+ }
+ .hover-effect>img:hover{
+    height: 53px;
+    width: 73px;
+
  }
