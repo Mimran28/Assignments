@@ -1,0 +1,286 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: Gilroy;
+}
+@font-face {
+    font-family: Gilroy;
+
+    src:url("Font/Gilroy-Light.otf");
+   
+  
+}
+.container{
+    max-width: 1400px;
+    width: 95vw;
+    padding: 0px 50px;
+    background-color: #f9f9f9;
+}
+.header{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 50px;
+}
+.header-nav{
+    width: 55%;
+  font-size: 17px;
+
+}
+.header-nav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav>ul>li{
+    text-align: center;
+    padding-left:10px;
+}
+.header-btn{
+    background-color:#75BF7A;
+    padding:10px 20px;
+    color:white;
+    font-size: 22px;
+   
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+   align-items: flex-end;
+    padding:10px;
+    background-color: #f9f9f9;
+}
+.sec-left{
+    width: 45%;
+}
+.sec-left>p{
+    margin:0px;
+    font-weight: light;
+}
+.sec-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top:90px;
+  
+}
+.sec-btn1{
+    background-color: black;
+    color: white;
+    padding:10px 35px;
+    font-size: 25px;
+ display: flex;
+ align-items: center;
+ border-radius: 5px;
+}
+.sec-btn1>span{
+    margin-left: 13px;
+}
+.sec-right>img{
+    width: 100%;
+}
+.sec-head{
+font-size: 61px;
+font-weight: bold;
+margin: 17px 0;
+}
+.sec-text{
+    color:#9E9DA2;
+    font-size: 24px;
+}
+.search-sec{
+background-color:#75BF7A;
+margin:70px 0;
+border-radius:6px;
+height:140px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.search-sec>p{
+    width:23%;
+    font-size: 25px;
+    line-height: 32px;
+    color:white;
+}
+.search-box{
+    display: flex;
+}
+.search-box>input{
+    width:390px;
+    padding: 18px;
+    border:0px;
+    margin-right:5px;
+    font-size:18px;
+    border-radius:5px 0 0 5px;
+}
+.heading-sec{
+    width:30%;
+    margin:0 auto;
+    text-align: center;
+}
+.heading-sec>h1{
+    font-size: 38px;
+}
+.heading-sec span{
+    color:#75BF7A;
+    font-weight:800;
+}
+
+.heading-sec p{
+    color:#9E9DA2;
+}
+.mobile-sec{
+    display:flex;
+    margin-top: 180px;
+    align-items: center;
+    justify-content: center;
+}
+.one{
+    position: relative;
+}
+.rel{
+    position: absolute;
+    top: 18px;
+    right: 26px;
+
+}
+.mobile-sec-left{
+    text-align: end;
+    width: 40%;
+}
+.mobile-sec-right{
+    width: 40%;
+}
+.round{
+    background-color: #75BF7A;
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    text-align: center;
+    
+}
+.mobile-sec-mid{
+    margin:0 60px;
+}
+.benefits-heading{
+    text-align: center;
+    font-size: 38px;
+    margin:120px 0;
+}
+.benefits-heading>span{
+    color:#75BF7A;
+}
+.benefits{
+    display: flex;
+    flex-direction: column;
+
+}
+.flexible{
+    width: 70%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 70px;
+    margin-bottom:60px;
+}
+.flexible-left{
+    width: 40%;
+}
+.flexible-left h1{
+    margin:0;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:80px 0;
+    background-color: white;
+}
+.sec-btn2{
+    background-color: black;
+    color: white;
+    padding:5px 5px;
+    font-size: 15px;
+    margin-left: 5px;
+ display: flex;
+ align-items: center;
+ border-radius: 5px;
+}
+.footer-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+
+@media only screen and (max-width:1044px){
+    .header-logo>img{
+        width:120px;
+    }
+    .header-btn{
+        padding:7px 15px;
+        
+        font-size: 16px;
+    }
+    .sec-head{
+        font-size: 45px;
+    
+        }
+        .sec-text{
+       
+            font-size: 16px;
+        }
+        .sec-btns{
+            margin-top:5px
+        }
+        .sec-btn1{
+        padding:5px 15px;
+            font-size: 16px;
+
+        }
+        .sec-right{
+            text-align: center;
+        }
+        .sec-right>img{
+            width: 60%;
+        }
+        .search-sec>p{
+            width:23%;
+            font-size: 20px;
+            line-height: 28px;
+            color:white;
+        }
+}
+
+@media only screen and (max-width:1177px){
+    .header-nav{
+        width: 65%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width:1300px){
+    .sec-head{
+        font-size: 55px;
+    
+        }
+        .sec-text{
+       
+            font-size: 18px;
+        }
+        .sec-btn1{
+        padding:5px 25px;
+            font-size: 20px;
+
+        }
+        .sec-right{
+            text-align: center;
+        }
+        .sec-right>img{
+            width: 80%;
+        }
+}
