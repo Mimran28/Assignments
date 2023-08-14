@@ -175,10 +175,292 @@
 // document.write(" Your Age "+age+"<br/>");
 
 
+//Chapter 6-9
+
+
+// var a =+prompt();
+// document.write("Reslt:<br/>The Value of a is :"+a);
+// document.write("<br/>The value ++a is : "+ ++a)
+// document.write ("<br/>Now the value of a is"+ a)
+// document.write("<br/>The value of a++ is : "+ a++);
+// document.write ("<br/>Now the value of a is : "+ a)
+// document.write("<br/>The value of --a is "+ --a+"<br/> Now the value of a is : "+a);
+// document.write("<br/> The Value of a-- is : "+ a-- +"<br/> Now the value of a is : "+ a );
+
+// var a = 2,b = 1;
+// document.write("Value of a is :"+ a +"<br/>and value of b is "+ b+"<br/>");
+// var result = --a - --b + ++b + b--;
+// document.write ("--a --b + ++b + b-- = <br/>");
+// document.write("Result : "+result+"<br/>");
+// document.write ("<h1>Explanation </h1>");
+// document.write("<br/>value of --a is 1");
+// document.write ( "<br/> The result of --a - --b is : 1");
+// document.write ( "<br/> The result of --a - --b + ++b is : 2");
+// document.write ( "<br/> The result of --a - --b + ++b + b-- is : 3");
+
+// var fname = prompt("Enter Your Name ");
+// alert("Hello "+ fname);
+
+// var num = +prompt("Enter number");
+
+// if(num){
+//     document.write(num+" x 1 = "+ num*1+"<br/>");
+//     document.write(num+" x 2 = "+ num*2+"<br/>");
+//     document.write(num+" x 3 = "+ num*3+"<br/>");
+//     document.write(num+" x 4 = "+ num*4+"<br/>");
+//     document.write(num+" x 5 = "+ num*5+"<br/>");
+//     document.write(num+" x 6 = "+ num*6+"<br/>");
+//     document.write(num+" x 7 = "+ num*7+"<br/>");
+//     document.write(num+" x 8 = "+ num*8+"<br/>");
+//     document.write(num+" x 9 = "+ num*9+"<br/>");
+//     document.write(num+" x 10 = "+ num*10+"<br/>");
+    
+// }else{
+//     document.write ("You have not type a number so this program will show the default table of 5<br/>")
+//     num= 5;
+//     document.write(num+" x 1 = "+ num*1+"<br/>");
+//     document.write(num+" x 2 = "+ num*2+"<br/>");
+//     document.write(num+" x 3 = "+ num*3+"<br/>");
+//     document.write(num+" x 4 = "+ num*4+"<br/>");
+//     document.write(num+" x 5 = "+ num*5+"<br/>");
+//     document.write(num+" x 6 = "+ num*6+"<br/>");
+//     document.write(num+" x 7 = "+ num*7+"<br/>");
+//     document.write(num+" x 8 = "+ num*8+"<br/>");
+//     document.write(num+" x 9 = "+ num*9+"<br/>");
+//     document.write(num+" x 10 = "+ num*10+"<br/>");
+    
+// }
+
+
+// var subject1 = prompt("Enter Subject 1 name");
+// var subject2 = prompt("Enter Subject 2 name");
+// var subject3 = prompt("Enter Subject 3 name");
+
+// var totalMarks = 100;
+
+// var marks1 = +prompt("Enter "+subject1+" marks ");
+// var marks2 = +prompt("Enter "+subject2+" marks ");
+// var marks3 = +prompt("Enter "+subject3+" marks ");
+
+// document.write("<table><tr><th>Subject</th><th>Total Marks</th><th>Obtained</th><th>Percentage</th></tr><tr><td>"+subject1+"</td><td>"+totalMarks+"</td><td>"+marks1+"</td><td>"+(marks1*100)/totalMarks+"%</td></tr><tr><td>"+subject2+"</td><td>"+totalMarks+"</td><td>"+marks2+"</td><td>"+(marks2*100)/totalMarks+"%</td></tr><tr><td>"+subject3+"</td><td>"+totalMarks+"</td><td>"+marks3+"</td><td>"+(marks3*100)/totalMarks+"%</td></tr><tr><td></td><td>300</td><td>"+(marks1+marks2+marks3)+"</td><td>"+((marks1+marks2+marks3)*100)/300+"%</td></tr></table>")
+
+
+//chapter 9-11
+
+// var city = prompt("Enter city name ");
+// if (city === "karachi" || city === "Karachi" || city === "KARACHI"){
+//     alert("Welcome to the city of lights");
+// }
+
+
+
+// var gender = prompt("Enter your gender").toLowerCase();
+// if(gender === "male"){
+//     alert("Good morning Sir")
+// }else if(gender === "female"){
+//    alert("Good morning Mam");
+// }
+// else{
+//     alert("enter valid gender")
+// }
+
+
+
+// var signal = prompt("Enter traffic signal colour").toLowerCase();
+ 
+// if(signal === "green"){
+//     alert("Move now ");
+// }else if(signal === "yellow"){
+//     alert("ready to move");
+// }
+// else if(signal === "red"){
+//    alert("Must stop");
+// }else{
+//     alert("you typed "+signal+" enter valid colour");
+// }
+
+
+
+// var fuel = +prompt("Enter remaining fuel in litres");
+// if(fuel <= 0.25){
+//     alert("Please refill the fuel in your car");
+// }else{
+//     alert("idk");
+// }
+
+
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// // }
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }else{
+//     alert("condition is false")
+// }
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+//      alert("condition 2 is true");
+//  }
+//  if (++c < 14){
+//     alert("condition 3 is true");
+//     }
+//     if(c === 14){
+//     alert("condition 4 is true");
+//     }
+// if("car" < "cat"){
+//     alert("car is smaller than cat");
+//     }
+
+
+
+
+// var marks1 = +prompt("enter marks1");
+// var marks2 = +prompt("enter marks2");
+// var marks3 = +prompt("enter marks3");
+
+// var total = 300;
+// var result = marks1+marks2+marks3;
+// var percentage =(result*100)/total;
+// var grade ;
+
+// document.write("<h1>Mark Sheet</h1><br/><br/><br/>");
+// if(percentage>=80){
+//    grade = "A-one";
+// }else if(percentage>=70){
+//     grade = "A-grade";
+// }else if( percentage>=60){
+//     grade = "B-grade";
+// }else{
+//     grade ="c"
+// }
+
+// document.write("Total marks : "+ total +"<br/> Marks obtained : "+ result +"<br/> Percentage : "+ percentage + "%<br/> Grade :"+grade);
+
+
+
+
+// var num = 6;
+// var guessNumber = +prompt("Guess the number");
+
+// if(guessNumber === 6){
+//     alert("correct. You won");
+// }
+// else if(guessNumber === 6+1 || guessNumber === 6-1){
+//     alert("Close enough");
+// }
+
+
+
+
+// var num = +prompt("Enter number to check /3 or not");
+
+// var reminder = num%3;
+// if(reminder === 0){
+//     alert(num+" is divisble by 3");
+// }else{
+//     alert(num+" not divisble by 3")
+// }
 
 
 
 
 
 
+//  var num = +prompt("Enter number to check even or odd");
+// var reminder = num % 2;
+// if (reminder === 0 ){
+//     alert("Even Number");
+// }else{
+//     alert("Odd number");
+// }
 
+
+
+
+// var temp = +prompt("Enter temperature ");
+// if(temp >40){
+//  alert("Its too hot outside");
+// }else if(temp>30){
+//     alert("Weather is normal");
+// }else if(temp <= 20){
+//     alert("weather is cool");
+// }
+
+
+
+
+
+// var num1 = +prompt("Enter first number");
+// var operation = prompt("enter operation you want");
+// var num2 = +prompt("Enter second number");
+// if(operation === "+"){
+//     alert(num1+num2);
+// }else if(operation === "-"){
+//     alert(num1 - num2);
+// }else if(operation === "*"){
+//     alert(num1 * num2)
+// }else if(operation === "/"){
+//     alert(num1/num2);
+// }else if(operation === "%"){
+//     alert(num1%num2);
+// }
+// else{
+//     alert ("please select operation +,-,*,/,%")
+// }
+
+
+
+
+//Chaper 12-13
+
+// var num1 = +prompt("Enter number");
+// var num2 = +prompt("Enter number");
+
+// if(num1 >num2){
+//     alert(num1 + " is larger");
+// }else if(num2 >num1){
+//     alert (num2 + " is larger");
+// }else if(num1 === num2 ){
+//     alert ("Both are equal");
+// }
+//  var num1 = +prompt("Enter number");
+// if(num1> 0){
+//     alert ("Number is +ve")
+// }else if(num1 < 0){
+//     alert ("Number is -ve")
+// }else if(num1 === 0){
+//     alert ("Number is Zero")
+// }
+
+
+// var vowel = prompt("Enter char to check vowel ").toLowerCase();
+// if(vowel === "a" || vowel === "e" || vowel === "i" || vowel === "o" || vowel === "u"){
+//     alert ("true")
+// }else{
+//     alert("false")
+// }
+
+
+// var correctPass = "hello123";
+// var userEntered = prompt("Enter your password");
+// if(userEntered === correctPass){
+//     alert("Correct password")
+// }else{
+//     alert("You entered invalid password")
+// }
+
+// var greeting;
+// var hour = 19;
+// if (hour < 18) {
+// greeting = "Good day";
+// }
+// else{
+// greeting = "Good evening";
+// }
+// alert(greeting);
