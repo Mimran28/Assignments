@@ -464,3 +464,126 @@
 // greeting = "Good evening";
 // }
 // alert(greeting);
+
+
+
+
+
+//Chapter 14-16
+
+
+
+
+
+
+
+// var students = [];
+// var students1 = [];
+// var strings =["string"];
+// var numbers = [23,23 ];
+// var booleans = [true , false];
+// var mixedArray = ["string", 23, true];
+// var education = ["HSC", "SSC", "BCS", "BS" , "BCOM", "MS", "M.Phil","PhD"]
+// document.write ("<h1>Qualification</h1><br/><br/><br/><br/>");
+// document.write ("1) "+education[0]+"<br/>");
+// document.write ("2) "+education[1]+"<br/>");
+// document.write ("3) "+education[2]+"<br/>");
+// document.write ("4) "+education[3]+"<br/>");
+// document.write ("5) "+education[4]+"<br/>");
+// document.write ("6) "+education[5]+"<br/>");
+// document.write ("7) "+education[6]+"<br/>");
+// document.write ("8) "+education[7]+"<br/>");
+
+
+// var studentsName = ["Micheal","John", "Tony"];
+// var studentsMarks = [450,360, 300];
+// var percent1 = (studentsMarks[0]*100)/500;
+// var percent2 = (studentsMarks[1]*100)/500;
+// var percent3 = (studentsMarks[2]*100)/500;
+// var percentages = [percent1,percent2,percent3];
+// document.write(`<h1>Score of ${studentsName[0]}is ${studentsMarks[0]} and percentage is ${percentages[0]}%</h1><br/>`);
+// document.write(`<h1>Score of ${studentsName[1]}is ${studentsMarks[1]} and percentage is ${percentages[1]}%</h1><br/>`);
+// document.write(`<h1>Score of ${studentsName[2]}is ${studentsMarks[2]} and percentage is ${percentages[2]}%</h1><br/>`);
+
+
+//  var colours = ["red","green"];
+// var colourName = prompt("Enter colour you to add in the start ");
+// colours.unshift(colourName);
+// for(var i=0; i<=colours.length-1; i++){
+//    document.write(`<span>${colours[i]}</span><br/>`);
+// // }
+
+// var colourName = prompt("Enter colour you to add at the end ");
+// colours.push(colourName);
+// for(var i=0; i<=colours.length-1; i++){
+//       document.write(`<span>${colours[i]}</span><br/>`);
+// // //      }
+
+// var colours = ["red","green"];
+ // colours.shift(0);     // //For deleting first colour of array
+// colours.unshift("yellow","black");    //  //For adding two colours at last of array
+// for(var i=0; i<=colours.length-1; i++){
+//       document.write(`<span>${colours[i]}</span><br/>`);
+//      }
+
+// var colours = ["red","green","blue"];
+// colours.pop();
+// for(var i=0; i<=colours.length-1; i++){
+//       document.write(`<span>${colours[i]}</span><br/>`);      }
+
+// var colours = ["red","green","blue"];
+// var colourName = prompt("Which colour you want to add");
+// var indexNo = +prompt("At what index want to add the color");
+// var updatedArray = colours.splice(indexNo,'0',colourName);
+// for(var i=0; i<=colours.length-1; i++){
+//       document.write(`<span>index ${i} ${colours[i]}</span><br/>`);      }
+
+// var colours = ["red","green","blue","black","pink","purple"];
+// var indexNo = +prompt("Which index no. want to delete.");
+// var indexNo1 = +prompt("How many colours want to delete.");
+// var updatedArray = colours.splice(indexNo,indexNo1);
+// for(var i=0; i<=colours.length-1; i++){
+//       document.write(`<span>index ${i} ${colours[i]}</span><br/>`);      }
+// document.write("<h1>Deleted elements</h1>")
+//       for(var i=0; i<=updatedArray.length-1; i++){
+//         document.write(`<span>index ${i} ${updatedArray[i]}</span><br/>`);      }
+  
+
+// var studentsMarks = [150,120,300,433,211,11];
+// studentsMarks.sort();
+// for(var i=0; i<=studentsMarks.length-1; i++){
+//     document.write(`<span>${studentsMarks[i]}</span>,`);
+// }
+
+// var devices = ["keyboard","mouse","LCD", "CPU"];
+// for(var i = 0; i<=devices.length-1; i++){
+//     document.write(` ${devices[i]},`);
+// }
+// document.write("<br/>")
+// for(var i=devices.length-1; i>=0; i--){
+//     var dlet =devices.shift();
+//     document.write(`out) ${dlet}<br/>`);
+// }
+
+// var strings = ["This", "is", "Laptop"];
+// for (let i = 0; i < strings.length; i++) {
+// document.write(`<span>${strings[i]}</span> `)    
+// }
+
+
+// var devices = ["keyboard","mouse","LCD", "CPU"];
+// for(var i = 0; i<=devices.length-1; i++){
+//     document.write(` ${devices[i]},`);
+// }
+// document.write("<br/>")
+// for(var i=devices.length-1; i>=0; i--){
+//     var dlet =devices.pop();
+//     document.write(`out) ${dlet}<br/>`);
+// }
+
+// var manufactures = ["Apple","Nokia","samsung","HTC","etc"]
+// document.write("<select>");
+// for(i=0; i<manufactures.length; i++){
+//     document.write(`<option>${manufactures[i]}</option>`)
+// }
+// document.write("</select>");
