@@ -583,7 +583,93 @@
 
 // var manufactures = ["Apple","Nokia","samsung","HTC","etc"]
 // document.write("<select>");
+
 // for(i=0; i<manufactures.length; i++){
 //     document.write(`<option>${manufactures[i]}</option>`)
 // }
 // document.write("</select>");
+
+
+
+
+
+
+
+
+
+
+
+// Chapter 17-20
+
+// var arr = [[],[]];
+// var arr2 = [[1,2,3],[2,1,1],[2,0,]]
+
+
+
+// for(var i= 0 ; i<11;i++){
+//     document.write(i+"<br/>")
+// }
+
+
+
+// var num= +prompt("enter number");
+// var num2 = +prompt("enter length")
+// for (var i= 1; i <= num2; i++){
+//     document.write(`${num} x ${i} = ${num*i}<br/>`)
+// }
+
+
+// var fruits = ["apple", "banana","mango","orange"]
+// var  searchFruit = prompt();
+// var flag = false;
+// for (var i= 0; i<fruits.length; i++){
+//    if(fruits[i] === searchFruit){
+//     document.write(`found at index ${i}`)
+//     flag= true;
+//    }
+// }
+// if(!flag){
+//    document.write("Not found")
+// }
+
+
+// var num  = [2,10,25,21,28,15];
+// var num2 = 0;
+// var result = 0;
+// for (var i = 0 ; i <= num.length; i++){
+//     if( num[i] > result){
+//       result = num[i]
+//     }
+// }
+
+// document.write(`largest num = ${result}`)
+
+
+
+
+
+// var num  = [2,10,25,21,28,15];
+// var num2 = 0;
+// var result = 28;
+// for (var i = num.length - 1 ; i >= 0 ; i--){
+//     if( num[i] < result){
+//       result = num[i]
+//     }
+// }
+
+// document.write(`lowest num = ${result}`)
+
+
+// for(var i = 1; i< 10; i++){
+//      document.write(i*5+" ")
+//  }
+
+
+
+
+
+
+
+
+
+
