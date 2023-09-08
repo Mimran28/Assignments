@@ -672,4 +672,152 @@
 
 
 
+//Chapter 21-25
 
+// var    firstName = prompt("Enter First name")
+// var lastName = prompt("Enter Last name")
+
+// var fullName = firstName + lastName;
+
+// alert(`Welcome ${fullName}`);
+
+
+
+// var userFavoritePhone = prompt("Enter favorite phone model");
+
+// document.write(`My favorite Phone is ${userFavoritePhone}<br/>`);
+// document.write(`Length of string is: ${userFavoritePhone.length}<br/>`);
+
+
+// var word = "Pakistani";
+// document.write(`Word : ${word}<br/>`);
+// document.write(`Index of letter n is ${word.indexOf('n')}`)
+
+// var word = "Pakistani";
+// document.write(`Word : ${word}<br/>`);
+// document.write(`LastIndex of letter n is ${word.lastIndexOf('n')}`)
+
+
+// var word = "Pakistani";
+// document.write(`Word : ${word}<br/>`);
+// document.write(`Letter at index 3 is ${word.charAt(3)}`)
+
+
+// var message ="Ali and Sami are best friends. They play cricket and football together";
+// console.log(message.replaceAll('and',"&"))
+
+
+// var convert = "472";
+// var num = parseInt(convert)
+// var type =typeof num;
+// document.write(`Value : ${num}<br/> type : ${type}`)
+
+
+// var userInput = prompt("Enter Word");
+// var capatalizeUserInput = userInput.toUpperCase();
+// console.log(capatalizeUserInput)
+
+// var userInput = prompt("Enter Word");
+// var str = userInput.charAt(0);
+// var newStr = str.toUpperCase() + userInput.slice(1)
+// console.log(newStr)
+
+// var userInput = prompt("Enter Word");
+// for(var i= 0; i<userInput.length; i++){
+//     console.log(userInput[i])
+//     if(userInput[i] === "@" || userInput[i] === "!"){
+//        userInput = prompt("Enter valid name");
+//        document.write(userInput)
+//     }
+// }
+
+
+// var fruits = ["apple","orange","strawberry","mango"];
+// var userInput = prompt("Enter fruit name").toLowerCase();
+// var flag = false ;
+// for(var i=0; i<fruits.length; i++){
+//     if(fruits[i] === userInput){
+//         document.write(`${fruits[i]} is available at index ${i}`)
+//         flag = true
+//     }
+// }
+
+// if(!flag){
+//     document.write(`Not availabe at our bakery`)
+// }
+
+
+// var str = "University of karachi";
+// var str2 = str.split("");
+// console.log(str2)
+
+
+// var str = prompt();
+// var str2 = str[str.length -1];
+// document.write (`The last word you entered is ${str2}`)
+
+
+// var str = "The quick brown fox jumps over the lazy dog. Write a program to count number of occurrences of word"
+// var str2 =str.split(" ");
+// var num = 0;
+// for(var i = 0; i < str2.length; i++){
+
+//      if(str2[i].toLowerCase() === "the"){
+//         num += 1;
+//      }
+// }
+// document.write(`Text : ${str}<br/>`);
+// document.write(`The word the is ${num} times`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Chapter 26-30
+
+// var num = prompt("Enter number");
+// document.write(`round off value ${Math.round(num)}`);
+// document.write(`floor value ${Math.floor(num)}`);
+// document.write(Math.ceil(num));
+
+
+// var num = prompt("Enter number");
+// var num2 = Math.abs(num);
+// console.log(num2)
+// document.write(`absolute value ${num2}`)
+
+
+// var num = Math.floor(Math.random()*6)+1;
+// console.log(num)
+
+
+// var randomNumber = Math.round(Math.random()*2);
+// console.log(randomNumber);
+// if(randomNumber === 1){
+//     document.write("head")
+// }else{
+//     document.write ("tail")
+// }
+
+
+// var userInput = prompt("Enter Weight");
+// document.write(userInput+"kilogram");
+
+// var num = prompt("Guess number");
+// var randomNumebr = Math.floor(Math.random()*10);
+// console.log(randomNumebr)
+// if(num === randomNumebr){
+//     document.write("Matched")
+// }else{
+//     document.write("Not Matched")
+// }
