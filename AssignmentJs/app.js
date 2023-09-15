@@ -821,3 +821,234 @@
 // }else{
 //     document.write("Not Matched")
 // }
+
+
+
+
+
+
+
+
+
+
+//Chapter 31-34
+
+// document.write(new Date());
+// var testDate = new Date();
+// document.write(testDate)
+
+// const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// var testDate = new Date();
+// document.write(month[testDate.getMonth()])
+
+
+// var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// var testDate = new Date();
+// var str = days[testDate.getDay()];
+// document.write(str.substring(0,3));
+
+
+// var testDate = new Date();
+// var str = testDate.getDay();
+// if(str === 0 || str === 7){
+//     document.write("It is fun day")
+// }
+
+
+// var testDate = new Date();
+// var d = testDate.getDate();
+// if(d <16){
+//     document.write("First 15 days of Month ")
+// }
+// else{
+//     document.write("last 15 days of Month ")
+// }
+
+
+// var testDate = new Date();
+// document.write(testDate+"<br/>");
+// document.write(testDate.getTime()+"<br/>");
+// document.write(testDate.getTime()/1000+"<br/>");
+
+
+//  var testDate = new Date();
+//  var d = testDate.getHours();
+//  if(d<13){
+//      document.write("AM")
+//     }
+// else{
+//     document.write("PM")
+// }
+
+
+// var testDate = new Date("December 30, 2023");
+// document.write(testDate);
+
+
+// var testDate = new Date("March 11, 2024")
+// var testDate2 = new Date();
+
+// var a = testDate.getTime();
+// var b = testDate2.getTime();
+
+// var remainingTime = (a-b)/(1000*3600*30);
+// console.log(remainingTime)
+
+
+
+
+// var age = prompt("Enter your age");
+// var nowDate  = new Date();
+// console.log(nowDate.getFullYear()-age)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Chapter 35-38
+
+
+//Question # 01
+// var nowDate = new Date();
+// function callDate (){
+//     document.write(nowDate);
+// }
+// callDate();
+
+
+//Q2
+// var firstName = prompt("Enter First Name");
+// var lastName = prompt("Enter last Name")
+
+// function greetUser (){
+//     document.write("Hello " +firstName+" "+lastName);
+// }
+// greetUser();
+
+
+//Q3
+// var num1 = +prompt("Enter number");
+// var num2 = +prompt("Enter number"); 
+
+// function addNumbers(){
+//     var sum;
+
+//     sum = num1 + num2;
+//     return sum;
+// }
+
+// console.log(addNumbers());
+
+
+
+
+//Q4
+// var num1 = +prompt("Enter number");
+// var num2 = +prompt("Enter number"); 
+// var result = 0 ;
+// var operator = prompt("Enter operation")
+
+// function calc(opt){
+//     if(opt === "+"){
+//         result = num1+num2
+//     }else if(opt === "-"){
+//         result = num1-num2
+//     }else if(opt === "*"){
+//         result = num1*num2
+//     }else if(opt === "/"){
+//         result = num1/num2
+//     }
+//     return result;
+// }
+
+// console.log(calc(operator))
+
+
+
+//Q5
+// var num = prompt("Enter Number");
+// function squareValue (val){
+//     var result = 0;
+//     result = val*val;
+//     return result;
+// }
+// console.log(squareValue(num))
+
+
+
+//Q6
+// var num = prompt("Enter Number");
+// var result = 1;
+// function factorialNum (val){
+//    for(var i = val; i>0; i--){
+//        result= result*i;
+//    }
+//    return result;
+// }
+// console.log(factorialNum(num));
+
+
+//Q7
+// var num = +prompt("Enter sNumber");
+// var num2 = +prompt("Enter eNumber");
+// function returnNum (val1,val2){
+//     for(var i = val1; i<val2; i++){
+//         console.log(i)
+//     }
+// }
+
+// returnNum(num,num2);
+
+
+//Q10
+// var word = prompt();
+// var result ="" ;
+// function checkPalindrome(){
+//     for(var i = word.length-1; i >= 0; i--){
+//         result += word[i]
+//     }
+//     if(result === word){
+//         console.log("Palindrom");
+//     }else{
+//         console.log("Not a Palindrom");
+//     }
+// }
+// checkPalindrome();
+
+
+
+
+
+//Q11
+// 
+// var result = "";
+// function changeUpper(){
+//     for(var i = 0; i<str.length; i++){
+       
+//         if(str[i] === " "){
+//             result += str[i+1].toUpperCase();
+//         }
+//         result = result+str[i]
+//     }
+//     console.log(result)
+// }
+
+
+// changeUpper();
+
+
+
+
