@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>  
+    <div class="container">
+     <div class="cal-container">
+         <div class="input-container">
+      <div style="padding:10px 0; width:60px;">
+        <i class="fa-solid fa-bars" style="color:white; font-size:25px;"></i>
+        </div> 
+           <div class="footer">
+               <p class="calc-p" id="para"></p>
+               <input  type="number" disabled id="input">
+         </div>
+        </div>
+        <div class="button-container">
+           <div class="btn-header">
+            <ul class="btn-head-list">
+                <li>MC</li>
+                <li>MR</li>
+                <li>M+</li>
+                <li>M-</li>
+                <li>MS</li>
+                <li>M</li>
+            </ul>
+           </div>
+           <div class="btns">
+            <button class="btn btn-sign" >%</button>
+            <button class="btn btn-sign" style="font-size:15px;" onclick="clearLast()" >CE</button>
+            <button class="btn btn-sign" style="font-size:15px;" onclick="clearAll()">AC</button>
+            <button class="btn btn-sign" style="font-size:25px;" onclick="addition('÷')">÷</button>
+           </div>
+           <div class="btns">
+            <button class="btn btn-number" id="btn1" onclick="addition(1)">1</button>
+            <button class="btn btn-number" onclick="addition(2)">2</button>
+            <button class="btn btn-number" onclick="addition(3)">3</button>
+            <button class="btn btn-sign"  onclick="addition('x')">x</button>
+           </div>
+           <div class="btns">
+            <button class="btn btn-number" onclick="addition(4)">4</button>
+            <button class="btn btn-number" onclick="addition(5)">5</button>
+            <button class="btn btn-number" onclick="addition(6)">6</button>
+            <button class="btn btn-sign" style="font-size:25px;"  onclick="addition('-')">-</button>
+           </div>
+           <div class="btns">
+            <button class="btn btn-number" onclick="addition(7)">7</button>
+            <button class="btn btn-number" onclick="addition(8)">8</button>
+            <button class="btn btn-number" onclick="addition(9)">9</button>
+            <button class="btn btn-sign" style="font-size:25px;"  onclick="addition('+')">+</button>
+           </div>
+           <div class="btns">
+            <button class="btn ">+/-</button>
+            <button class="btn btn-number" onclick="addition(0)">0</button>
+            <button class="btn btn-number" style="font-size:25px;"  onclick="addition('.')">.</button>
+            <button class="btn btn-sign btn-equal" style="font-size:25px;" onclick="showResult('=')">=</button>
+           </div>
+       </div>
+     </div>  
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
