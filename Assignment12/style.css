@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+background-color: rgb(240, 237, 237);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.post-container{
+    height: 350px;
+    width: 500px;
+    max-width: 500px;
+    background-color:rgb(244, 244, 244);
+    border-radius: 8px;
+    box-shadow: 1px 4px 6px grey;
+    display: none;
+}
+.post-header{
+    display: flex;
+    margin:10px 10px;
+   height: 20%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.image-sec{
+    display: flex;
+
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+   margin:0px 10px;
+}
+.name-container{
+  margin:10px 0px;
+}
+.name-container>p{
+ margin:0;
+}
+.back-btn{
+    color:white;
+    padding:10px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #00a400;
+    cursor: pointer;
+}
+.back-btn:hover{
+    background-color: #089008;
+}
+.post-body{
+    height:60%;
+    width: 100%;
+    background-color:white;
+    background-image: url('https://img.freepik.com/free-vector/organic-fluid-background_1199-325.jpg');
+    color:white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+
+}
+.post-footer>div{
+    padding: 6px;
+}
+.post-footer>div:hover{
+    color:rgb(74, 135, 220);
+    cursor:pointer
+}
+.post-footer>div>i{
+    margin-right: 5px;
+} 
+.create-post{
+    height: 400px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 5px grey;
+    background-color: #fff;
+}
+.create-header{
+    text-align: center;
+    padding: 5px;
+}
+.create-body{
+  height: 180px;
+  color:rgb(146, 143, 143);
+    background-color:#f5f3f3;
+}
+.text-area{
+    font-size: 20px;
+    width: 95%;
+    height: 90%;
+    border:none;
+    font-size:35px;
+    background: transparent;
+}
+.text-area:focus{
+    outline:none;
+}
+.create-body>h1{
+    margin: 0;
+    padding:5px;
+}
+.background{
+    display: flex;
+    justify-content: space-around;
+    padding:10px
+    
+}
+.back-con{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-back{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+.image-back:hover{
+    height: 50px;
+    width: 50px;
+}
+.create-footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.btn-post{
+    background-color: rgb(53, 113, 233);
+    color:white;
+    padding:10px;
+    width: 60%;
+    border-radius:10px;
+    font-weight: bold;
+}
+.btn-post:hover{
+    background-color: rgb(55, 103, 199);
+    cursor: pointer;
+}

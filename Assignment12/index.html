@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="post-container" id="post_container">
+            <div class="post-header">
+                <div class="image-sec">
+                    <img  src="profile.jpg" class="profile"/>
+                <div class="name-container">
+                    <p style="font-weight: bold; font-size:18px">Profile</p>
+                     <p style="color:grey">Post App</p>
+                </div>
+                  </div>
+               <div onclick="post()" class="back-btn">
+               Create New Post   
+            </div> 
+            </div>
+            <div class="post-body" id="post_body">
+                <textarea disabled class="text-area" id="content">Hello World</textarea>
+            </div>
+            <div class="post-footer">
+                <div><i class="fa-regular fa-heart"></i>Like</div>
+                <div><i class="fa-regular fa-comment"></i>Comment</div>
+                <div><i class="fa-regular fa-share-from-square"></i>Share</div>
+            </div>
+        </div>
+        <div class="create-post" id="create_container">
+            <div class="create-header">
+                <h1>Create Post</h1>
+              </div>
+            <div class="create-body" id="create_body">
+               <textarea id="text_area" class="text-area" placeholder="Write Here ..."></textarea>
+            </div>
+            <div class="background">
+               <div class=back-con onmouseover="changeBackground('d7.avif')"> <img class="image-back" src="d7.avif" alt=""></div><div class=back-con onmouseover="changeBackground('d4.jpg')"> <img class="image-back" src="d4.jpg" alt=""></div><div class=back-con onmouseover="changeBackground('d6.webp')"> <img class="image-back" src="d6.webp" alt=""></div><div class=back-con onmouseover="changeBackground('d8.jpg')"> <img class="image-back" src="d8.jpg" alt=""></div><div class=back-con onmouseover="changeBackground('d2.jpg')"> <img class="image-back" src="d2.jpg" alt=""></div><div class=back-con onmouseover="changeBackground('d5.jpg')"> <img class="image-back" src="d5.jpg" alt=""></div>
+            </div>
+             <div class="create-footer">
+                <div class="btn-post" id="btn_post" onclick="submit()">
+                   Create New Post
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
