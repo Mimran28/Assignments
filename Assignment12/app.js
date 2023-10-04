@@ -18,6 +18,7 @@ create.style.backgroundImage = `url(${val})`
 }
 
 function submit(){
+if(textArea.value){
     doc2.style.display = 'none'
     doc1.style.display = 'block'
     console.log(valOf)
@@ -35,6 +36,8 @@ function submit(){
  
     heading.innerHTML = textArea.value
 
+}
+  
 }
 function post(){
     doc2.style.display = 'block'
