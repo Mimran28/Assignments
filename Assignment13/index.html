@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MobiStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+              </li>
+            </ul>
+            <div class="row">
+              <select onchange="selectItem()" id="select1" class="form-select me-2 " aria-label="Default select example">
+              </select>
+              <select  id="select2" class="form-select me-2" aria-label="Default select example">
+                </select>
+        
+                
+              </div>
+              <button onclick="renderData()" class="btn btn-success" >Search</button>
+               </div>
+        </div>
+      </nav>
+      <div  id  = 'card' class="row">
+        <!-- <div class="card" style="width: 18rem;">
+            <img class="mob" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h4>Redmi note 12</h4>
+            <h5 style="color:rgb(165, 29, 42)">Rs 35000/-</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="mob" src="https://www.whatmobile.com.pk/admin/images/Xiaomi/XiaomiRedmi12-s.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h4>Redmi note 12</h4>
+            <h5 style="color:rgb(165, 29, 42)">Rs 35000/-</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="mob" src="https://www.whatmobile.com.pk/admin/images/Xiaomi/XiaomiRedmi12-s.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h4>Redmi note 12</h4>
+            <h5 style="color:rgb(165, 29, 42)">Rs 35000/-</h5>
+            </div> -->
+          </div>
+      
+           </div>
+      
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
