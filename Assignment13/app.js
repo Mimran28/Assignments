@@ -115,17 +115,30 @@ function selectItem(){
 }
 function renderData(){
     card.innerHTML = ""
-    // if(!selectlist1.value){
-    //     for(var key2 in mobiles[selectlist.value]){
-    //        console.log(key2);
-            // card.innerHTML += `<div class="card" style="width: 18rem;">
-            // <img class="mob" src="${mobiles[key2].image}" alt="...">
-            // <div class="card-body">
-            // <h4>${mobiles[selectlist.value][selectlist1.value].name}</h4>
-            // <h5 style="color:rgb(165, 29, 42)">Rs ${mobiles[selectlist.value][selectlist1.value].price} /-</h5>
-            // </div>`
-        // }
-    // }
+    if(!selectlist.value){
+        for(var key in mobiles){
+            for (var key2 in mobiles[key]){
+                console.log(key2);
+                card.innerHTML += `<div class="card" style="width: 18rem;">
+                <img class="mob" src="${mobiles[key][key2].image}" alt="...">
+                <div class="card-body">
+                <h4>${mobiles[key][key2].name}</h4>
+                <h5 style="color:rgb(165, 29, 42)">Rs ${mobiles[key][key2].price} /-</h5>
+                </div>`
+            }
+        }
+    }
+    if(!selectlist1.value){
+        for(var key2 in mobiles[selectlist.value]){
+           console.log(key2);
+            card.innerHTML += `<div class="card" style="width: 18rem;">
+            <img class="mob" src="${mobiles[selectlist.value][key2].image}" alt="...">
+            <div class="card-body">
+            <h4>${mobiles[selectlist.value][key2].name}</h4>
+            <h5 style="color:rgb(165, 29, 42)">Rs ${mobiles[selectlist.value][key2].price} /-</h5>
+            </div>`
+        }
+    }
     if(selectlist.value && selectlist1.value){
         card.innerHTML = `<div class="card" style="width: 18rem;">
             <img class="mob" src="${mobiles[selectlist.value][selectlist1.value].image}" alt="...">
@@ -135,17 +148,3 @@ function renderData(){
             </div>`
     }
 }
-// var mobileName = mobiles[selectlist.value]; 
-// for(var key in mobiles){
-//     // console.log("new",key);
-//     for(var key1 in mobileName){
-//         console.log(key1);
-//     }
-//     card.innerHTML = `<div class="card" style="width: 18rem;">
-//     <img class="mob" src="" alt="...">
-//     <div class="card-body">
-//     <h4></h4>
-//     <h5 style="color:rgb(165, 29, 42)">Rs 35000/-</h5>
-//     </div>`
-
-// }
