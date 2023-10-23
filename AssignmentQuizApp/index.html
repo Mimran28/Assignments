@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <div class="quiz-container" >
+    <div class="quiz-container" id="quiz-container">
+        <div style="width: 100%;">
+            <h1 class="heading">Quiz App</h1>
+            <div class="header">
+                <p id = 'totalques'>Total Question</p>
+                <div class="header-left">
+                    <img height="60" width="60" src="https://i.pinimg.com/originals/01/28/46/0128468e98f1312cb40ef96218f4f6a5.gif"/>
+                   <div style="width: 40px;"> <h4 style="padding:0px; margin:0px; font-weight: bold;" id="timer">1:10</h4></div>
+                </div>
+            </div>
+        </div>
     
         <div id="quiz"></div>
         
         <ul class="options" id="options">
         </ul>
-
-
-
-      
-        <button id="submit-button" onclick="renderQuestion()">Submit</button>
+        <button id="submit-button" class="button" onclick="renderQuestion()">Next</button>
     </div>
 
    

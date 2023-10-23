@@ -15,7 +15,7 @@ body {
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 40px;
+    padding: 20px;
 }
 
 h1 {
@@ -25,12 +25,14 @@ h1 {
 }
 
 .question {
-    font-size: 20px;
+    font-size: 26px;
     margin-bottom: 10px;
+    margin:50px 0 10px 0;
     font-weight: bold;
 }
 .question1{
     font-weight: bold;
+    
 }
 
 .options {
@@ -46,18 +48,18 @@ h1 {
     margin-right: 10px;
 }
 
-button {
-    background-color: #007bff;
+.button {
+    background-color: #6a5bdc;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.2s;
     display: block;
-    margin: 0 0 auto auto;
+    margin: 0 30px 30px auto;
 }
 
 .result-container {
@@ -77,4 +79,35 @@ button {
 button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+}
+li{
+    list-style: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.quiz{
+    display: flex;
+}
+
+#quiz>li>input{
+    font-size: 24px;
+}
+#totalques{
+    margin: 0;
+    font-weight: bold;
+}
+.heading{
+    font-weight: bold;
+    font-size: 39px;
+    color:#6a5bdc
+}
+.list-radio{
+    font-size: 20px;
 }
