@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     <div class="container">
     <div class="login form">
         <header>Login</header>
         <form action="#">
-          <input type="text" placeholder="Enter your email" id="name">
+          <input type="text" placeholder="Enter your name" id="name">
           <span class="errorMsg" id="msg1"></span>
           <input type="password" placeholder="Enter your password" id="password">
-          <span class="errorMsg" id="msg2"></span>
+          <span class="errorMsg" id="msg2"></span><br>
           <a href="#">Forgot password?</a>
           <input type="button" class="button" onclick="onLogin()" value="Login">
      
@@ -25,6 +27,7 @@
         </div>
       </div>
       </div>
+
       <script src="app.js"></script>
 </body>
 </html>

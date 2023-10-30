@@ -8,7 +8,7 @@ var errorMsg2= document.getElementById('msg2')
  
 var objArr=[]
 const onSubmit = ()=>{
-    if(fname.value === "" && password.value === "" ){
+    if(fname.value.trim() === "" && password.value.trim()=== "" ){
        errorMsg.innerText = "*email required"
        errorMsg2.innerText = "*password required"
     }else if(password.value === ""){
@@ -21,6 +21,7 @@ const onSubmit = ()=>{
            var flag = true;
           for(var i= 0; i<parsedUser.length; i++){
             if(parsedUser[i].name === fname.value){
+               
                 alert('already registered redirecting to login')
                 window.location.href="login.html"
                 flag = false;
@@ -34,7 +35,13 @@ const onSubmit = ()=>{
               obj.isLog = true;
                 parsedUser.push(obj);
                 localStorage.setItem('userData',JSON.stringify(parsedUser))
-              alert('registered successfully');
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Registered Successfully',
+                    showConfirmButton: true,
+                 
+                  })
               window.location.href ="index.html"
             
             }else{
@@ -49,7 +56,13 @@ const onSubmit = ()=>{
            obj.isLog = true;
             objArr.push(obj);
             localStorage.setItem('userData',JSON.stringify(objArr))
-            alert('registered successfully');
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Registered Successfully',
+                showConfirmButton: true,
+                
+              })
          
             window.location.href ="index.html"
           
@@ -65,6 +78,8 @@ const onLogin =()=>{
     var getUser = localStorage.getItem('userData')
     var userLogin= JSON.parse(getUser)
 var flag = true;
+
+if(userLogin){
     for(var i = 0; i<userLogin.length; i++){
         if( fname.value === userLogin[i].name && userLogin[i].pass === password.value){
             userLogin[i].isLog = true;
@@ -73,10 +88,15 @@ var flag = true;
                 flag = false;
          }
     }
+}
+
     if(flag){
-    if(userLogin.name !== fname.value){
-        errorMsg
-    } 
+    if( fname.value.trim() === "" && password.value.trim() === ""){
+        errorMsg.innerHTML = "email not found"
+        errorMsg2.innerHTML = "password not matched"
+    } else if( password.value.trim() === ""){
+        errorMsg2.innerHTML = "password not matched"
+    }
     }
 }
 const onLogout =()=>{
@@ -103,9 +123,12 @@ for(var i= 0; i<localData2.length; i++){
 }
 const matchPass=()=>{
     var errorMsg = document.getElementById('msg3');
-   if(password.value=== cpassword.value){
-    errorMsg.innerText = "password match"
-    errorMsg.style.color ='green';   
+   if(password.value.trim()=== cpassword.value){
+    if(cpassword.value){
+        errorMsg.innerText = "password match"
+        errorMsg.style.color ='green';  
+    }
+  
    }else{
     errorMsg.innerText = "*password not match"
     errorMsg.style.color ='red';   
