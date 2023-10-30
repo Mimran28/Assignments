@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="registration form">
+          <header>Signup</header>
+         
+            <input type="email" placeholder="Enter your email" id="name" required>
+            <span class="errorMsg" id="msg1"></span>
+            <input type="password" placeholder="Create a password" id="password" required>
+            <span class="errorMsg" id="msg2"></span>
+            <input type="password" placeholder="Confirm your password" onkeyup="matchPass()" id="cpassword">
+            <span class="errorMsg" id="msg3"></span>
+            <input type="button" class="button" onclick="onSubmit()" value="Signup">
+    
+          <div class="signup">
+            <span class="signup">Already have an account?
+             <a class="label" href="login.html">Login</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
