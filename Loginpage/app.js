@@ -1,12 +1,70 @@
 
-var fname = document.getElementById('name')
-var password = document.getElementById('password')
-var cpassword = document.getElementById('cpassword')
-var preUser  = document.getElementById('userInfo')
-var errorMsg = document.getElementById('msg1');
-var errorMsg2= document.getElementById('msg2')
- 
-var objArr=[]
+ var fname = document.getElementById('name')
+ var password = document.getElementById('password')
+ var cpassword = document.getElementById('cpassword')
+ var preUser  = document.getElementById('userInfo')
+ var errorMsg = document.getElementById('msg1');
+ var errorMsg2= document.getElementById('msg2')
+ var createblog = document.getElementById('editor')
+ var head = document.getElementById('heading')
+ var btn = document.getElementById('button')
+ var renderPost1= document.getElementById('postcontainer1')
+ var renderPost2 = document.getElementById('postcontainer')
+ var post = document.getElementById('post')
+ var logoName= document.getElementById('logoName')
+ var getItem  = localStorage.getItem('post');
+ var arrGetItem = JSON.parse(getItem);
+   
+   
+ var arrObj  = [];
+ var objArr  = [];
+ var editorValue;
+if(renderPost1){
+    var quill = new Quill('#editor', {
+        theme: 'snow',
+        placeholder: 'Create New post`'
+    });
+    if(arrGetItem){
+        for(var i = 0; i<arrGetItem.length; i++){
+            renderPost1.innerHTML +=`<div class="post" id="post">${arrGetItem[i].post}</div>`
+        }
+    }
+    
+       btn.innerHTML = `<button class=button onclick=renderPost()>Post</button>`  
+}
+
+function renderPost(){
+    console.log(arrGetItem);
+    if(arrGetItem){
+        if(quill.root.innerHTML !== " "){
+            var obj = {}
+            obj.post = quill.root.innerHTML
+            obj.fname= logoName.innerHTML
+            arrGetItem.unshift(obj)
+            localStorage.setItem('post',JSON.stringify(arrGetItem))
+            quill.setText("")
+        }
+    }else{
+        if(quill.root.innerText !== " "){
+            var obj = {}
+            obj.post = quill.root.innerHTML
+            obj.fname= logoName.innerHTML
+            arrObj.unshift(obj)
+            localStorage.setItem('post',JSON.stringify(arrObj))
+            quill.setText("")   
+        }
+        }
+    if(renderPost1.innerHTML){
+       renderPost1.innerHTML = ""
+    } 
+    if(arrGetItem){
+        for(var i = 0; i<arrGetItem.length; i++){
+            console.log("helo");
+            renderPost1.innerHTML +=`<div class="post" id="post">${arrGetItem[i].post}</div>`
+        }   
+    }
+    
+}
 const onSubmit = ()=>{
     if(fname.value.trim() === "" && password.value.trim()=== "" ){
        errorMsg.innerText = "*email required"
@@ -14,7 +72,7 @@ const onSubmit = ()=>{
     }else if(password.value === ""){
         errorMsg2.innerText = "*password required"
     }
-    else{
+    else{;
         var getUser = localStorage.getItem('userData')
         if(getUser){
            var parsedUser = JSON.parse(getUser);
@@ -88,6 +146,13 @@ if(userLogin){
                 flag = false;
          }
     }
+}else{
+   
+        errorMsg.innerHTML = "email not found"
+        errorMsg2.innerHTML = "password not matched"
+  
+     
+    
 }
 
     if(flag){
@@ -112,12 +177,13 @@ const onLogout =()=>{
       window.location.href="login.html"
     }
 }
-if(preUser){
+if(logoName){
     var localData = localStorage.getItem('userData');
     var localData2 = JSON.parse(localData)
-for(var i= 0; i<localData2.length; i++){
+   
+    for(var i= 0; i<localData2.length; i++){
     if(localData2[i].isLog){
-        preUser.innerHTML = `<h1>Welcome Mr.${localData2[i].name}</h1>`
+        logoName.innerHTML =localData2[i].name
     }
 }
 }
