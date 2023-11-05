@@ -14,7 +14,7 @@
  var logoName= document.getElementById('logoName')
  var getItem  = localStorage.getItem('post');
  var arrGetItem = JSON.parse(getItem);
-   
+
    
  var arrObj  = [];
  var objArr  = [];
@@ -25,49 +25,59 @@ if(renderPost1){
         placeholder: 'Create New post`'
     });
     if(arrGetItem){
+
         for(var i = 0; i<arrGetItem.length; i++){
-            renderPost1.innerHTML +=`<div class="post" id="post">${arrGetItem[i].post}</div>`
+            renderPost1.innerHTML +=`<div class="post" id="post"><h3>Posted by ${arrGetItem[i].fname === logoName.value ? 'You' : arrGetItem[i].fname}</h3>${arrGetItem[i].post}</div>`
         }
     }
-    
        btn.innerHTML = `<button class=button onclick=renderPost()>Post</button>`  
 }
 
 function renderPost(){
-    console.log(arrGetItem);
     if(arrGetItem){
-        if(quill.root.innerHTML !== " "){
+        if(quill.root.innerText.trim().length>0){
             var obj = {}
             obj.post = quill.root.innerHTML
             obj.fname= logoName.innerHTML
             arrGetItem.unshift(obj)
             localStorage.setItem('post',JSON.stringify(arrGetItem))
             quill.setText("")
+        }else{
+            Swal.fire('Write something to post')
         }
     }else{
-        if(quill.root.innerText !== " "){
+        if(quill.root.innerText.trim().length>0){
             var obj = {}
             obj.post = quill.root.innerHTML
             obj.fname= logoName.innerHTML
             arrObj.unshift(obj)
             localStorage.setItem('post',JSON.stringify(arrObj))
             quill.setText("")   
+        }else{
+            Swal.fire('Write something to post')
         }
         }
     if(renderPost1.innerHTML){
        renderPost1.innerHTML = ""
     } 
-    if(arrGetItem){
-        for(var i = 0; i<arrGetItem.length; i++){
-            console.log("helo");
-            renderPost1.innerHTML +=`<div class="post" id="post">${arrGetItem[i].post}</div>`
-        }   
+    console.log(arrGetItem , arrObj);
+    if(arrGetItem || arrObj){
+        if(arrGetItem){
+            for(var i = 0; i<arrGetItem.length; i++){
+                renderPost1.innerHTML +=`<div class="post" id="post"><h3>Posted by ${arrGetItem[i].fname}</h3>${arrGetItem[i].post}</div>`
+            }   
+        }else{
+            for(var i = 0; i<arrObj.length; i++){
+                renderPost1.innerHTML +=`<div class="post" id="post"><h3>Posted by ${arrObj[i].fname}</h3>${arrObj[i].post}</div>`
+            }  
+        }
+       
     }
     
 }
 const onSubmit = ()=>{
     if(fname.value.trim() === "" && password.value.trim()=== "" ){
-       errorMsg.innerText = "*email required"
+       errorMsg.innerText = "*name required"
        errorMsg2.innerText = "*password required"
     }else if(password.value === ""){
         errorMsg2.innerText = "*password required"
@@ -135,32 +145,28 @@ const onSubmit = ()=>{
 const onLogin =()=>{
     var getUser = localStorage.getItem('userData')
     var userLogin= JSON.parse(getUser)
-var flag = true;
+var matched = false;
 
 if(userLogin){
     for(var i = 0; i<userLogin.length; i++){
         if( fname.value === userLogin[i].name && userLogin[i].pass === password.value){
             userLogin[i].isLog = true;
+           
             localStorage.setItem('userData', JSON.stringify(userLogin))
                window.location.href = 'index.html'
-                flag = false;
-         }
-    }
-}else{
+                matched = true;
    
-        errorMsg.innerHTML = "email not found"
-        errorMsg2.innerHTML = "password not matched"
-  
-     
-    
+        }
+    }
 }
-
-    if(flag){
+    if(!matched){   
+        errorMsg.innerHTML = "name not found"
+        errorMsg2.innerHTML = "password not matched"
     if( fname.value.trim() === "" && password.value.trim() === ""){
-        errorMsg.innerHTML = "email not found"
-        errorMsg2.innerHTML = "password not matched"
+        errorMsg.innerHTML = "name required"
+        errorMsg2.innerHTML = "password required"
     } else if( password.value.trim() === ""){
-        errorMsg2.innerHTML = "password not matched"
+        errorMsg2.innerHTML = "password required"
     }
     }
 }
