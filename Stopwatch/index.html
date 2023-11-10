@@ -11,17 +11,19 @@
         <div class="stopWatch">
             <header class="header">
               <ul>
-                <li class="listItem">STOPWATCH</li>
-                <li class="listItem">TIMER</li>
+                <li class="listItem" onclick="runStopWatch()">STOPWATCH</li>
+                <li class="listItem" onclick="runSTimer()">TIMER</li>
               </ul>
             </header>
             <div class="timer" id="timer">
                <h1>0s 0</h1>
-          
-            </div>
+              </div>
+              <div class="timer" style="display: none;" id="timerContainer" >        
+                <input type="number" onkeyup="setVal()" id="timerInput" placeholder="mm ss">
+              </div>
                 <button onclick="runTimer()" id="button" class="button">start</button>
                 <button onclick="resetTimer()" class="button1">reset</button>
-                <button onclick="lapTimer()"  class="button2">Lap</button>
+                <button onclick="lapTimer()"  class="button2" id="lapBtn">Lap</button>
     
         </div>
         <div class="lapContainer" id="lapContainer">
@@ -29,4 +31,4 @@
     </div>
     <script src="app.js"></script>
 </body>
-</html>
+</html> 

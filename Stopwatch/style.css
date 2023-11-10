@@ -70,3 +70,25 @@ header>ul{
     font-size: 30px;
     text-align: center;
 }
+#timerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timerInput{
+font-size:55px;
+width: 50%;
+border: none;
+border-bottom: 1px solid lightgray;
+text-align:center;
+}
+#timerInput:focus{
+    outline:none;
+}
+/* Chrome, Safari, Edge, Opera */
+#timerInput::-webkit-outer-spin-button,
+#timerInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
