@@ -3,43 +3,51 @@ let absContainer = document.getElementById("absContainer")
 let doc = document.getElementById('absName');
 let namaz = [
     {name:'Fajr',
-    time: new Date (`November 23,2023 06:30`)},
+    time:'01:58:00AM'},
     {name:'Zuhr',
-    time: new Date (`November 23,2023 13:45`)},
+    time: '01:52:10AM'},
     {name:'Asr',
-    time: new Date (`November 23,2023 16:30`)},
+    time: '01:52:20AM'},
     {name:'Maghrib',
-    time: new Date (`November 23,2023 17:40`)},
+    time: '05:40PM'},
     {name:'Isha',
-    time: new Date (`November 22,2023 19:27`)},
+    time: '07:29PM'},
 ]
 var test= []
+let namazName;
 function setTime(){
-   var now = new Date().getTime();
-   var arr = [] 
-   var zer = "0";
-   for(let key in test){
-    arr.push(test[key].time)
-    }
-const a = Math.min(...arr);
+let now = new Date();
+let zer = '0';
+let hours = now.getHours();
+let am = hours>=12?'PM':'AM'
+hours = hours>=12?hours%12:hours
+let minutes = now.getMinutes();
+let seconds = now .getSeconds();
+let time = `${hours<10?zer+hours:hours}:${minutes<10?zer+minutes:minutes}:${seconds<10?zer+seconds:seconds}${am}`
+console.log(time);
 for(let key in namaz){
-    if(namaz[key].time.getTime() === a){
-        var timeleft =namaz[key].time.getTime() - now
-        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-       if(timeleft>0){
-           absContainer.innerHTML=` <h1 id='absName' style="text-align: center;">${namaz[key].name}</h1>
-           <div style="display:flex;justify-content: space-around;align-items: center; padding:5px">
-           <h2>Remaining Time</h2>
-           <h2 id='timeRem'>${hours<10?zer+hours:hours}:${minutes<10?zer+minutes:minutes}:${seconds<10?zer+seconds:seconds}</h2>
-           </div>`
-        }
-    }
- }
+ if(namaz[key].time === time){
+ namazName = namaz[key].name
+  }
 }
+absContainer.innerHTML=`
+           <h1 id='timeRem'>${hours<10?zer+hours:hours}:${minutes<10?zer+minutes:minutes}:${seconds<10?zer+seconds:seconds} ${am}</h1>`
+        }
 setInterval(setTime,1000)
+setInterval(function(){
+    console.log(namazName);
+    if(namazName){
+        navigator.serviceWorker.ready.then(rewSa=>{
+            const options = {
+           message:'this is body'
+            }
+            rewSa.showNotification();
+          })
+          namazName = ""
+      }
+  },1000)
 function showNamazTime(){
+   
     for(var key in namaz){
         var now = new Date().getTime();
        var timeleft =namaz[key].time.getTime()-now;
@@ -58,3 +66,40 @@ function showNamazTime(){
     }
 }
 showNamazTime();    
+function testTime (){
+    let arr = ['00:45','00:46','00:47']
+    let namazArr = ['fajr','zuhr','asr']
+    let nowTime = new Date();
+    let zer = '0';
+    let setCurrent =`${nowTime.getHours()<10?zer+nowTime.getHours():nowTime.getHours()}:${nowTime.getMinutes()<10?zer+nowTime.getMinutes():nowTime.getMinutes()}`
+    for(let i= 0;i<arr.length; i++){
+        if(arr[i] === setCurrent){
+            if(arr[i+1]){
+                console.log(arr[i+1],namazArr[i+1]);
+            }else{
+                console.log(arr[0],namazArr[0]);
+            }
+        }
+    }
+}
+setInterval(testTime,1000)
+
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        Notification.requestPermission().then(res=>{
+            if(Notification.permission === 'granted'){
+                console.log('permision granted');
+                return 
+            }
+            console.log(res);
+        })
+        .catch(err => console.log("service worker not registered", err))
+    })
+  }
+ 
+  
+  
