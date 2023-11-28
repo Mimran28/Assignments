@@ -49,19 +49,11 @@ setInterval(function(){
 function showNamazTime(){
    
     for(var key in namaz){
-        var now = new Date().getTime();
-       var timeleft =namaz[key].time.getTime()-now;
-       var obj ={}
-       if(timeleft>0){
-        obj.name = namaz[key].name;
-        obj.time = namaz[key].time.getTime()
-        test.push(obj)
-        obj={}
-       }
+
         cont.innerHTML +=`<div class="n-container">
         <h1>${namaz[key].name}</h1>
         <h1 class="time-logo"> Time:</h1>
-        <h1 class="time">${namaz[key].time.toLocaleTimeString()}</h1>
+        <h1 class="time">${namaz[key].time}</h1>
     </div>`
     }
 }
